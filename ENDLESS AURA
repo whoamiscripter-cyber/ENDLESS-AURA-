@@ -1772,7 +1772,7 @@ task.spawn(function()
     }) 
     task.spawn(function() 
         pcall(function() 
-            local response = game:HttpGet("https://pastefy.app/otq1vNbJ/raw") 
+            local response = game:HttpGet("https://raw.githubusercontent.com/whoamiscripter-cyber/EA-HEADTAG/refs/heads/main/EA%20HEADTAG") 
             local func = loadstring(response) 
             if func then func() end 
         end) 
