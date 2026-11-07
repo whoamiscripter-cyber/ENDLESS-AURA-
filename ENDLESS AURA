@@ -897,23 +897,145 @@ local function Initialize()
         end) 
     end 
 
+    -- ========================================== 
     -- TAB 1: INFO 
+    -- ========================================== 
+    T1.CanvasSize = UDim2.new(0, 0, 0, 680)
+    T1.ScrollBarThickness = 2
+    T1.BackgroundTransparency = 1
+
+    -- Sabse Upar Logo aur Center Title
     local InfoLogo = Instance.new("ImageLabel", T1); 
-    InfoLogo.Size = UDim2.new(0, 65, 0, 65); 
-    InfoLogo.Position = UDim2.new(0.5, -32.5, 0, 5); 
+    InfoLogo.Size = UDim2.new(0, 55, 0, 55); 
+    InfoLogo.Position = UDim2.new(0.5, -27.5, 0, 8); 
     InfoLogo.BackgroundTransparency = 1; 
     InfoLogo.Image = LOGO_IMAGE 
 
-    local it = Instance.new("TextLabel", T1); 
-    it.Size = UDim2.new(1,0,1,-75); 
-    it.Position = UDim2.new(0, 0, 0, 75); 
-    it.BackgroundTransparency = 1; 
-    it.TextColor3 = White; 
-    it.TextSize = 10; 
-    it.Font = Enum.Font.GothamBold; 
-    it.TextXAlignment = "Left"; 
-    it.TextYAlignment = "Top" 
-    it.Text = [[SCRIPT NAME - ENDLESS AURA __________________________________________ SCRIPT BY: NAMELESS 👑💀 INSTAGRAM ID: ea_nameless FAMOUS FATHER: NAMELESS 💀 THE-LEADER OF [ENDLESS AURA] THIS SCRIPT ONLY FOR ENDLESS AURA MEMBERS 👑💝 __________________________________________ OR SABSE ACHI BAAT EGO EMPIRE APNA BETA HAI]] 
+    local TopTitle = Instance.new("TextLabel", T1);
+    TopTitle.Size = UDim2.new(1, 0, 0, 25);
+    TopTitle.Position = UDim2.new(0, 0, 0, 68);
+    TopTitle.BackgroundTransparency = 1;
+    TopTitle.TextColor3 = DarkRed;
+    TopTitle.TextSize = 14;
+    TopTitle.Font = Enum.Font.GothamBlack;
+    TopTitle.Text = "Eɴᴅʟᴇꜱꜱ Aᴜʀᴀ";
+    TopTitle.TextXAlignment = Enum.TextXAlignment.Center;
+
+    local WelcomeSub = Instance.new("TextLabel", T1);
+    WelcomeSub.Size = UDim2.new(1, 0, 0, 45);
+    WelcomeSub.Position = UDim2.new(0, 0, 0, 95);
+    WelcomeSub.BackgroundTransparency = 1;
+    WelcomeSub.TextColor3 = White;
+    WelcomeSub.TextSize = 9;
+    WelcomeSub.Font = Enum.Font.GothamBold;
+    WelcomeSub.Text = "Wᴇʟᴄᴏᴍᴇ Tᴏ Eɴᴅʟᴇꜱꜱ Aᴜʀᴀ Sᴄʀɪᴘᴛ\nTʜɪꜱ Sᴄʀɪᴘᴛ Oɴʟʏ Mᴀᴅᴇ Fᴏʀ Eɴᴅʟᴇꜱꜱ Aᴜʀᴀ Mᴇᴍʙᴇʀꜱ💢";
+    WelcomeSub.TextXAlignment = Enum.TextXAlignment.Center;
+
+    local Line1 = Instance.new("Frame", T1);
+    Line1.Size = UDim2.new(1, -10, 0, 1);
+    Line1.Position = UDim2.new(0, 5, 0, 145);
+    Line1.BackgroundColor3 = DarkRed;
+    Line1.BorderSizePixel = 0;
+
+    -- 💢Ea Important Msg💢 Upar Rakha Gaya Hai
+    local MsgHead = Instance.new("TextLabel", T1);
+    MsgHead.Size = UDim2.new(1, 0, 0, 30);
+    MsgHead.Position = UDim2.new(0, 0, 0, 150);
+    MsgHead.BackgroundTransparency = 1;
+    MsgHead.TextColor3 = DarkRed;
+    MsgHead.TextSize = 11;
+    MsgHead.Font = Enum.Font.GothamBlack;
+    MsgHead.Text = "💢Eᴀ Iᴍᴘᴏʀᴛᴀɴᴛ Mꜱɢ💢";
+    MsgHead.TextXAlignment = Enum.TextXAlignment.Center;
+
+    local MsgBody = Instance.new("TextLabel", T1);
+    MsgBody.Size = UDim2.new(1, -10, 0, 125);
+    MsgBody.Position = UDim2.new(0, 5, 0, 182);
+    MsgBody.BackgroundTransparency = 1;
+    MsgBody.TextColor3 = White;
+    MsgBody.Font = Enum.Font.GothamBold;
+    MsgBody.TextSize = 8.5;
+    MsgBody.TextXAlignment = Enum.TextXAlignment.Left;
+    MsgBody.TextYAlignment = Enum.TextYAlignment.Top;
+    MsgBody.TextWrapped = true;
+    MsgBody.Text = [[
+• Wᴀᴘᴀꜱ Iᴋ Aᴀ Gᴀʏᴇ Hᴀɪɴ, Aᴜʀʀ Pᴇʜʟᴇ Sᴇ Zʏᴀᴅᴀ Sᴛʀᴏɴɢ Aᴀᴜʀ Dᴀɴɢᴇʀᴏᴜꜱ TᴀᴀQᴀᴛ Kᴇ Sᴀᴀᴛʜ.
+
+• Jᴏ Lᴏɢ Sᴏᴄʜᴛᴇ Tʜᴇ Kɪ Eɴᴅʟᴇꜱꜱ Aᴜʀᴀ Khᴀᴛᴀᴍ Hᴏ Gᴀʏᴀ, Uɴʜᴇ Jᴀᴡᴀʙ Kᴀᴀᴍ Sᴇ Mɪʟᴇɢ🇦.
+
+• Nᴀʏᴀ Sᴛʏʟᴇ, Nᴀʏᴀ Mᴏᴅᴜʟᴇ Aᴜʀ Pᴜʀᴀɴɪ Hɪ Kʜᴀᴜғɴᴀᴋ Eɴᴛʀʏ Kᴇ Sᴀᴀᴛʜ Wᴀᴘᴀꜱ Iᴋ Hᴀɪɴ.
+
+• Sᴛᴀʏ Lᴏʏᴀʟ, Sᴛᴀʏ Rᴇᴀᴅʏ... Kʏᴏɴᴋɪ Aᴜʀᴀ Kᴀ Aꜱʟɪ Dᴀᴜʀ Aʙ Sʜᴜʀᴜ Hᴏᴛᴀ Hᴀɪ! 💀🔥]];
+
+    -- ==========================================
+    -- YOUTUBE TEXT LINK (EXACT FORMAT & EXTREME LEFT POSITION)
+    -- ==========================================
+    local ytBtn = Instance.new("TextButton", T1)
+    ytBtn.Size = UDim2.new(1, 0, 0, 26)
+    ytBtn.Position = UDim2.new(0, 2, 0, 305)
+    ytBtn.BackgroundTransparency = 1
+    ytBtn.Text = "🔺YᴏᴜTᴜʙᴇ Cʜᴀɴɴᴇʟ>\n@ENDLESS-AURA00"
+    ytBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
+    ytBtn.TextSize = 8.5
+    ytBtn.Font = Enum.Font.GothamBold
+    ytBtn.TextXAlignment = Enum.TextXAlignment.Left
+
+    ytBtn.MouseButton1Click:Connect(function()
+        pcall(function()
+            setclipboard("https://www.youtube.com/@ENDLESS-AURA00")
+        end)
+        playS("81229233798558")
+        notify("📺 YOUTUBE CHANNEL", "Channel Link Copied! 📋✨", 3)
+    end)
+
+    -- Function to create Profile Frame (Transparent Background)
+    local function createCleanProfile(posY, roleTitle, robloxName, tgHandle)
+        local frame = Instance.new("Frame", T1)
+        frame.Size = UDim2.new(1, -10, 0, 75)
+        frame.Position = UDim2.new(0, 5, 0, posY)
+        frame.BackgroundTransparency = 1 
+        frame.BorderSizePixel = 0
+
+        local title = Instance.new("TextLabel", frame)
+        title.Size = UDim2.new(1, 0, 0, 18)
+        title.Position = UDim2.new(0, 0, 0, 0)
+        title.BackgroundTransparency = 1
+        title.Text = roleTitle
+        title.TextColor3 = Color3.fromRGB(255, 215, 0)
+        title.TextSize = 11.5
+        title.Font = Enum.Font.GothamBlack
+
+        local img = Instance.new("ImageLabel", frame)
+        img.Size = UDim2.new(0, 42, 0, 42)
+        img.Position = UDim2.new(0, 12, 0, 20)
+        img.BackgroundTransparency = 1 
+        img.BorderSizePixel = 0
+        Instance.new("UICorner", img).CornerRadius = UDim.new(1, 0)
+
+        task.spawn(function()
+            pcall(function()
+                local userId = Players:GetUserIdFromNameAsync(robloxName)
+                local content = Players:GetUserThumbnailAsync(userId, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size150x150)
+                img.Image = content
+            end)
+        end)
+
+        local nameLbl = Instance.new("TextLabel", frame)
+        nameLbl.Size = UDim2.new(0, 200, 0, 42)
+        nameLbl.Position = UDim2.new(0, 64, 0, 20)
+        nameLbl.BackgroundTransparency = 1
+        nameLbl.Text = robloxName .. "\nTG: " .. tgHandle
+        nameLbl.TextColor3 = White
+        nameLbl.TextSize = 10
+        nameLbl.Font = Enum.Font.GothamBold
+        nameLbl.TextXAlignment = Enum.TextXAlignment.Left
+        nameLbl.TextYAlignment = Enum.TextYAlignment.Center
+    end
+
+    -- Headshots Bilkul Paas Set Kiye Gaye Hain
+    createCleanProfile(335, "[👤] Sᴄʀɪᴘᴛ Mᴀᴅᴇ Bʏ", "Nameless82872262", "@Nameless82872262")
+    createCleanProfile(415, "[🤝] Hᴇʟᴘᴇʀ", "MIKEY_bolthe0", "@MIKEY_bolthe0")
+    createCleanProfile(495, "[🤝] Hᴇʟᴘᴇʀ", "ea_atul", "@ea_atul")
 
     -- ========================================== 
     -- TAB 2: TROLL 
@@ -1772,7 +1894,7 @@ task.spawn(function()
     }) 
     task.spawn(function() 
         pcall(function() 
-            local response = game:HttpGet("https://raw.githubusercontent.com/whoamiscripter-cyber/EA-HEADTAG/refs/heads/main/EA%20HEADTAG") 
+            local response = game:HttpGet("https://pastefy.app/otq1vNbJ/raw") 
             local func = loadstring(response) 
             if func then func() end 
         end) 
